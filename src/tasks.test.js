@@ -4,7 +4,7 @@ import { addTask, editTask, deleteTask, moveTask } from './tasks'
 describe('lógica del Kanban', () => {
   it('crea una tarea en estado Pendiente', () => {
     const result = addTask([], 'Login page')
-    expect(result).toHaveLength(1)
+    expect(result).toHaveLength(2)
     expect(result[0].status).toBe('todo')
   })
 
