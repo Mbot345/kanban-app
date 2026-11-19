@@ -70,6 +70,7 @@ export default function App() {
                   </div>
                 </article>
               ))}
+              {colTasks.length === 0 && <p className="empty">Sin tareas</p>}
             </section>
           )
         })}
